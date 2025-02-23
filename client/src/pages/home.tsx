@@ -22,8 +22,8 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         className="text-center relative"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 blur-3xl -z-10" />
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-200/30 to-purple-200/30 blur-3xl -z-10" />
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           Creative Portfolio
         </h1>
         <p className="text-xl text-muted-foreground">
@@ -61,7 +61,7 @@ export default function Home() {
                 alt={artwork.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-400/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                   <h3 className="font-medium text-lg">{artwork.title}</h3>
                 </div>
@@ -93,7 +93,7 @@ export default function Home() {
               key={track.id}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-card rounded-lg p-4 hover:bg-accent/50 transition-colors"
+              className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100/50 transition-colors"
             >
               <h3 className="font-medium mb-2">{track.title}</h3>
               <audio
